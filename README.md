@@ -1,70 +1,109 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Frontend del Proyecto de Conversiones
 
-## Available Scripts
+Este proyecto es la interfaz de usuario para una aplicación de conversiones. Permite al usuario realizar conversiones y guardar sus resultados para su visualización posterior.
 
-In the project directory, you can run:
+## Tecnologías utilizadas
 
-### `npm start`
+- **React** con **Styled-Components** para el diseño dinámico.
+- **JavaScript** para la lógica de la aplicación.
+- **CSS** integrado mediante `styled-components` para un diseño modular y reutilizable.
+- **Responsive Design** para garantizar que la aplicación sea accesible en múltiples dispositivos.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Características principales
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Conversor funcional que permite realizar cálculos específicos.
+- Sección para guardar conversiones y mostrarlas en un diseño de dos columnas.
+- Diseño atractivo y moderno con sombras y bordes redondeados.
+- Compatible con dispositivos móviles y pantallas grandes.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Requisitos previos
 
-### `npm run build`
+Antes de comenzar, asegúrate de tener instalado:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Node.js** (v14 o superior recomendado)
+- **npm** o **yarn**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Instalación
 
-### `npm run eject`
+Sigue los pasos a continuación para ejecutar el proyecto en tu máquina local:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. Clona este repositorio:
+   ```bash
+   git clone https://github.com/juangabrieeel/frontend_conversor.git
+   ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+2. Accede al directorio del proyecto:
+   ```bash
+   cd nombre-del-repo
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+3. Instala las dependencias:
+   ```bash
+   npm install
+   # o si usas yarn
+   yarn install
+   ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+## Uso
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. Inicia el servidor de desarrollo:
+   ```bash
+   npm start
+   # o con yarn
+   yarn start
+   ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+2. Abre tu navegador y navega a `http://localhost:3000`.
 
-### Code Splitting
+3. Explora las funciones del conversor y guarda conversiones para verlas en la sección de "Guardados".
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
+## Estructura del proyecto
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+El proyecto sigue una estructura organizada basada en componentes:
 
-### Making a Progressive Web App
+```
+src/
+├── components/        # Componentes reutilizables como Header, Footer, SavedCards
+├── styles/            # Archivos de styled-components
+├── App.js             # Componente principal
+├── index.js           # Punto de entrada
+└── ...
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+---
 
-### Advanced Configuration
+## Personalización
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- **Colores y temas:** Puedes cambiar los colores en los archivos de `styled-components` dentro de `src/styles`.
+- **Funciones adicionales:** Añade más lógica en los componentes o expande las características según sea necesario.
 
-### Deployment
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Contribuciones
 
-### `npm run build` fails to minify
+¡Las contribuciones son bienvenidas! Si tienes sugerencias o mejoras:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. Haz un fork del repositorio.
+2. Crea una rama para tu característica o corrección:
+   ```bash
+   git checkout -b mi-nueva-caracteristica
+   ```
+3. Realiza tus cambios y haz un commit:
+   ```bash
+   git commit -m "Agrega una nueva característica"
+   ```
+4. Sube tus cambios a tu fork:
+   ```bash
+   git push origin mi-nueva-caracteristica
+   ```
+5. Crea un pull request en el repositorio original.
+
+---
